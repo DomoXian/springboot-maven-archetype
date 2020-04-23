@@ -19,6 +19,7 @@
 ![添加相关插件](introduce/img/add-plugins.png)
 #### 第三步
 定义项目工程和结构
+
 ![创建标准文件夹](introduce/img/define-project-1.png)
 ![定义元数据](introduce/img/define-project-2.png)
 ![定义工程目录和结构](introduce/img/define-project-3.png)
