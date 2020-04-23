@@ -46,7 +46,7 @@
 </distributionManagement>
 ```
 相关命令：
-> mvn clean package
+> mvn clean package | 
 > mvn deploy
 
 如果没有maven仓库私服，可以在把代码下载到本地然后，直接进行install到本地仓库中，相关命令：
@@ -64,7 +64,7 @@ mvn archetype:generate \
 
 ## 相关问题
 mvn命令提示找不到。。。
-> 额，是因为maven没有安装好，或者环境变量没有配置成功，自行百度解决maven安装和环境变量配置问题
+> 额，这个是因为maven没有安装好，或者环境变量没有配置成功，自行百度解决maven安装和环境变量配置问题
 
 .gitignore和README.md文件没有生成
 > archetype-metadata.xml配置的姿势不对，请看下图，第一个fileSet应该将.gitignore和README.md手动include进去
