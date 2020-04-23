@@ -20,16 +20,16 @@ github代码[戳这里](https://github.com/DomoXian/springboot-maven-archetype)(
 ## 一、创建和开发
 #### 第一步
 创建一个maven工程项目
-![maven工程](https://user-gold-cdn.xitu.io/2020/4/24/171a7def5afd6e8c?w=880&h=590&f=png&s=162092)
-![自定义groupId和artifactid](https://user-gold-cdn.xitu.io/2020/4/24/171a7df0921250b4?w=880&h=590&f=png&s=42784)
+![创建maven工程](introduce/img/create-project-1.png)
+![定义groupId和artifactId](introduce/img/create-project-2.png)
 #### 第二步
 在工程里面的pom.xml中添加相关插件和依赖
-![添加相关插件](https://user-gold-cdn.xitu.io/2020/4/24/171a7deb0ce0e4e1?w=1403&h=883&f=png&s=215637)
+![添加相关插件](introduce/img/add-plugins.png)
 #### 第三步
 定义生成项目工程的目录和结构
-![创建标准文件夹](https://user-gold-cdn.xitu.io/2020/4/24/171a7df23a3a7ac7?w=478&h=483&f=png&s=57551)
-![定义元数据](https://user-gold-cdn.xitu.io/2020/4/24/171a7df3a2f9e686?w=1271&h=981&f=png&s=315053)
-![定义工程目录和结构](https://user-gold-cdn.xitu.io/2020/4/24/171a7df4f3723d32?w=490&h=754&f=png&s=92177)
+![创建标准文件夹](introduce/img/define-project-1.png)
+![定义元数据](introduce/img/define-project-2.png)
+![定义工程目录和结构](introduce/img/define-project-3.png)
 #### 第四步
 编写脚手架代码，具体可以结合[代码](https://github.com/DomoXian/springboot-maven-archtype)看一下哈，这里就不过多叙述
 
@@ -78,4 +78,4 @@ mvn命令提示找不到。。。
 
 .gitignore和README.md文件没有生成
 > archetype-metadata.xml配置的姿势不对，请看下图，第一个fileSet应该将.gitignore和README.md手动include进去
- ![定义元数据](https://user-gold-cdn.xitu.io/2020/4/24/171a7deb0ce0e4e1?w=1403&h=883&f=png&s=215637)
+ ![定义元数据](introduce/img/define-project-2.png)
