@@ -1,28 +1,35 @@
 手把手教你撸一个SpringBoot-maven-archetype脚手架
 ==============
-> 小哥[源代码](https://github.com/DomoXian/springboot-maven-archtype)在这里，戳进来后，随手给个star或follower哦，我会互粉~~~
+
 ## 前言
-大半夜码砖着实有点困，扛不住了，第一版先这些功能吧~
+> 该脚手架主要是用来快速构建一个多modeule的SpringBoot的项目工程,生成后的项目结构如下
+```text
+project
+  client--提供外部接口
+  common--内部或者外部公共依赖
+  server--服务核心和入口
+```
+第一版支持的功能
 - [x] 多module(目前分了server、common、client三个module)
 - [x] 规范异常处理，全局异常处理和(ControllerAdvice实现)
 - [x] 统一日志格式，植入全局链路traceId，方便根据日志定位问题
 - [x] swagger管理接口文档
 - [x] 接入actuator和prometheus,对相关应用指标进行埋点
 
+github代码[戳这里](https://github.com/DomoXian/springboot-maven-archetype)(小哥，代码看完，觉得好的话，随手给个start或follower哦~互粉互粉！)
 ## 一、创建和开发
 #### 第一步
 创建一个maven工程项目
-![](introduce/img/create-project-1.png)
-![](introduce/img/create-project-2.png)
+![maven工程](https://user-gold-cdn.xitu.io/2020/4/24/171a7def5afd6e8c?w=880&h=590&f=png&s=162092)
+![自定义groupId和artifactid](https://user-gold-cdn.xitu.io/2020/4/24/171a7df0921250b4?w=880&h=590&f=png&s=42784)
 #### 第二步
 在工程里面的pom.xml中添加相关插件和依赖
-![添加相关插件](introduce/img/add-plugins.png)
+![添加相关插件](https://user-gold-cdn.xitu.io/2020/4/24/171a7deb0ce0e4e1?w=1403&h=883&f=png&s=215637)
 #### 第三步
-定义项目工程和结构
-
-![创建标准文件夹](introduce/img/define-project-1.png)
-![定义元数据](introduce/img/define-project-2.png)
-![定义工程目录和结构](introduce/img/define-project-3.png)
+定义生成项目工程的目录和结构
+![创建标准文件夹](https://user-gold-cdn.xitu.io/2020/4/24/171a7df23a3a7ac7?w=478&h=483&f=png&s=57551)
+![定义元数据](https://user-gold-cdn.xitu.io/2020/4/24/171a7df3a2f9e686?w=1271&h=981&f=png&s=315053)
+![定义工程目录和结构](https://user-gold-cdn.xitu.io/2020/4/24/171a7df4f3723d32?w=490&h=754&f=png&s=92177)
 #### 第四步
 编写脚手架代码，具体可以结合[代码](https://github.com/DomoXian/springboot-maven-archtype)看一下哈，这里就不过多叙述
 
@@ -71,4 +78,4 @@ mvn命令提示找不到。。。
 
 .gitignore和README.md文件没有生成
 > archetype-metadata.xml配置的姿势不对，请看下图，第一个fileSet应该将.gitignore和README.md手动include进去
- ![定义元数据](introduce/img/define-project-2.png)
+ ![定义元数据](https://user-gold-cdn.xitu.io/2020/4/24/171a7deb0ce0e4e1?w=1403&h=883&f=png&s=215637)
