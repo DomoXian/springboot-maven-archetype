@@ -2,8 +2,8 @@
 ==============
 > 小哥[源代码](https://github.com/DomoXian/springboot-maven-archtype)在这里，戳进来后，随手给个star或follower哦，我会互粉~~~
 ## 前言
-摸着后脑勺，第一版先定这么多功能吧
-- [x] 多module(目前分了server、common、client三个modeule)
+大半夜码砖着实有点困，扛不住了，第一版先这些功能吧~
+- [x] 多module(目前分了server、common、client三个module)
 - [x] 规范异常处理，全局异常处理和(ControllerAdvice实现)
 - [x] 统一日志格式，植入全局链路traceId，方便根据日志定位问题
 - [x] swagger管理接口文档
