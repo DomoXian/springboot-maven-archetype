@@ -53,6 +53,7 @@
 > mvn clean install
 
 #### 使用
+```text
 mvn archetype:generate \
 -DgroupId=输入你的groupId \
 -DartifactId=输入你artifactId \
@@ -61,6 +62,8 @@ mvn archetype:generate \
 -DarchetypeGroupId=com.homer \
 -DarchetypeArtifactId=homer-maven-archetype \
 -DarchetypeVersion=0.0.1-SNAPSHOT
+```
+
 
 ## 相关问题
 mvn命令提示找不到。。。
