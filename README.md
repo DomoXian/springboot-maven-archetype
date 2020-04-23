@@ -76,6 +76,9 @@ mvn archetype:generate \
 mvn命令提示找不到。。。
 > 额，这个是因为maven没有安装好，或者环境变量没有配置成功，自行百度解决maven安装和环境变量配置问题
 
+readme图片显示不出来
+> github图片被墙了，翻墙后可以显示出来
+
 .gitignore和README.md文件没有生成
 > archetype-metadata.xml配置的姿势不对，请看下图，第一个fileSet应该将.gitignore和README.md手动include进去
  ![定义元数据](introduce/img/define-project-2.png)
