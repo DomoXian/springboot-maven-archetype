@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 默认配置, 无特殊需求无需更改 -->
+<configuration>
+    <property name="APP_NAME" value="${rootArtifactId}"/>
+    <property name="LOG_HOME" value="${user.home}"/>
+    <property name="LOG_FILE" value="${LOG_HOME}/logs/${APP_NAME}/${APP_NAME}.log"/>
+    <property name="LOG_SIZE" value="500MB"/>
+    <property name="LOG_HISTORY_DAYS" value="30"/>
+    <include resource="logback/defaults.xml"/>
+    <include resource="logback/base.xml"/>
+</configuration>
